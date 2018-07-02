@@ -2,5 +2,6 @@
     "eat": "1",
     "loan": "2",
     "study": "3",
-    "clothes": "4"
+    "clothes": "4",
+    "total_price": "5"
 }
