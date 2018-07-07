@@ -4,5 +4,9 @@
     "3rd":[],
     "4th":[{"breakfast":"7"},{"afternoon_tea":"16.90"},{"clothes":"144"}],
     "5th":[{"breakfast":"7"},{"lunch":"81.70"},{"aliyun":"25"}],
-    "6th":[{"breakfast":"7"},{"subscribe":"10"},{"afternoon_tea":""}]
+    "6th":[{"breakfast":"7"},{"subscribe":"10"},{"afternoon_tea":""}],
+    "7th":[],
+    "8th":[],
+    "9th":[],
+    "10th":[]
 }
