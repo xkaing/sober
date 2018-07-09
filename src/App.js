@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Finance from './view/finance';
 
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
+        <CssBaseline />
+        <Finance />
       </React.Fragment>
     );
   }
