@@ -7,6 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import echarts from 'echarts/lib/echarts';
 import 'echarts/lib/chart/bar';
 import 'echarts/lib/component/title';
+import 'echarts/lib/component/tooltip';
+import 'echarts/lib/component/legend';
+import 'echarts/lib/component/grid';
 
 const styles = {
   card: {
@@ -20,17 +23,52 @@ class ChartMonth extends Component {
   componentDidMount(){
     let myChart = echarts.init(document.getElementById('pieChart'));
     myChart.setOption({
+      title: {
+        text: '每日开销统计'
+      },
+      legend: {
+        data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎', '百度', '谷歌', '必应', '其他']
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+          type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+      },
       xAxis: {
         type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Sat', 'Sun', 'Sat', 'Sun', 'Sat', 'Sun', 'Sat', 'Sun']
+        data: ['1号', '2号', '3号', '4号', '5号', '6号', '7号'],
+        axisTick: {
+          alignWithLabel: true
+        }
       },
       yAxis: {
         type: 'value'
       },
-      series: [{
-        data: [120, 200, 150, 80, 70, 110, 130, 110, 130, 110, 130, 110, 130, 110, 130],
-        type: 'bar'
-      }]
+      series: [
+        {
+          name: '邮件营销',
+          type: 'bar',
+          stack: '广告',
+          data: [120, 132, 101, 134, 90, 230, 210]
+        },{
+          name: '联盟广告',
+          type: 'bar',
+          stack: '广告',
+          data: [220, 182, 191, 234, 290, 330, 310]
+        },{
+          name: '视频广告',
+          type: 'bar',
+          stack: '广告',
+          data: [150, 232, 201, 154, 190, 330, 410]
+        },
+      ]
     });
   }
 
