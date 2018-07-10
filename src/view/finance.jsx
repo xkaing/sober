@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import ChartMonth from '../component/ChartMonth'
 
 const styles = theme => ({
     main: {
         marginTop: 40,
+        height: 2040,
     },
     root: {
         ...theme.mixins.gutters(),
         paddingTop: theme.spacing.unit * 2,
         paddingBottom: theme.spacing.unit * 2,
-        width: 1000,
-        // textAlign: 'center',
+        width: 1200,
+        height: 2000,
         margin: '0 auto',
     },
 });
@@ -23,13 +25,8 @@ function Finance(props) {
 
     return (
         <div className={classes.main}>
-            <Paper className={classes.root} elevation={2}>
-                <Typography variant="headline" component="h3">
-                    This is a sheet of paper.
-                </Typography>
-                <Typography component="p">
-                    Paper can be used to build surface or other elements for your application.
-                </Typography>
+            <Paper className={classes.root} elevation={10}>
+                <ChartMonth />
             </Paper>
         </div>
     );
