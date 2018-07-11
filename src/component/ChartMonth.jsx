@@ -56,27 +56,27 @@ class ChartMonth extends Component {
         {
           name: '早餐',
           type: 'bar',
-          stack: '日常开销',
+          stack: '开销',
           data: [0, 8, 0, 7, 7, 7, 0, 0, 0, 0, 0]
         },{
           name: '午餐',
           type: 'bar',
-          stack: '日常开销',
+          stack: '开销',
           data: [0, 65.31, 0, 0, 81.70, 0, 0, 0, 0, 82.50, 0]
         },{
           name: '零食',
           type: 'bar',
-          stack: '日常开销',
+          stack: '开销',
           data: [0, 30, 0, 16.90, 0, 0, 0, 0, 0, 0, 69]
         },{
           name: '信用卡',
           type: 'bar',
-          stack: '特殊开销',
+          stack: '开销',
           data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 4801, 0]
         },{
           name: '衣着',
           type: 'bar',
-          stack: '日常开销',
+          stack: '开销',
           data: [0, 0, 0, 144, 0, 0, 0, 0, 0, 0, 0]
         },
       ]

@@ -1,8 +1,16 @@
 {
     "1st":[],
-    "2nd":[{"breakfast":"8"},{"lunch":"65.31"},{"afternoon_tea":"30"}],
+    "2nd":[
+        {"name":"早餐","money":"8"},
+        {"name":"午餐","money":"65.31"},
+        {"name":"零食","money":"30"}
+    ],
     "3rd":[],
-    "4th":[{"breakfast":"7"},{"afternoon_tea":"16.90"},{"clothes":"144"}],
+    "4th":[
+        {"name":"早餐","money":"7"},
+        {"name":"零食","money":"16.90"},
+        {"name":"衣着","money":"144"}
+    ],
     "5th":[{"breakfast":"7"},{"lunch":"81.70"},{"aliyun":"25"}],
     "6th":[{"breakfast":"7"},{"subscribe":"10"},{"afternoon_tea":""}],
     "7th":[],
