@@ -67,7 +67,7 @@ class ChartMonth extends Component {
           name: '零食',
           type: 'bar',
           stack: '开销',
-          data: [0, 30, 0, 16.90, 0, 0, 0, 0, 0, 50, 69]
+          data: [0, 30, 0, 16.90, 0, 0, 0, 0, 0, 50, 69, 0, 139.57]
         },{
           name: '衣着',
           type: 'bar',
@@ -78,6 +78,11 @@ class ChartMonth extends Component {
           type: 'bar',
           stack: '开销',
           data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 0]
+        }, {
+          name: '订阅',
+          type: 'bar',
+          stack: '开销',
+          data: [0, 0, 0, 0, 25, 10, 0, 0, 0, 50, 0]
         }
       ]
     });
