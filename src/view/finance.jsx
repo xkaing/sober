@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 // import Typography from '@material-ui/core/Typography';
 import ChartMonth from '../component/ChartMonth'
+import TotalAssets from '../component/TotalAssets'
 
 const styles = theme => ({
     main: {
@@ -26,6 +27,7 @@ function Finance(props) {
     return (
         <div className={classes.main}>
             <Paper className={classes.root} elevation={10}>
+                <TotalAssets />
                 <ChartMonth />
             </Paper>
         </div>
