@@ -25,10 +25,10 @@ class ChartMonth extends Component {
     let myChart = echarts.init(document.getElementById('pieChart'));
     myChart.setOption({
       title: {
-        text: '7月日常开销'
+        text: 'daily expenses'
       },
       legend: {
-        data: ['早餐', '午餐', '零食', '衣着', '信用卡', '外债', '京东金融', '公交卡', '订阅', '阿里云服务', '饿了么会员']
+        data: ['breakfast', 'lunch', 'snacks', 'clothing', 'subscribe']
       },
       grid: {
         left: '3%',
@@ -54,27 +54,27 @@ class ChartMonth extends Component {
       },
       series: [
         {
-          name: '早餐',
+          name: 'breakfast',
           type: 'bar',
           stack: '开销',
           data: [0, 8, 0, 7, 7, 7, 0, 0, 0, 0, 0, 5.5]
         },{
-          name: '午餐',
+          name: 'lunch',
           type: 'bar',
           stack: '开销',
           data: [0, 65.31, 0, 0, 81.70, 0, 0, 0, 0, 82.50, 0, 0, 80.68]
         },{
-          name: '零食',
+          name: 'snacks',
           type: 'bar',
           stack: '开销',
           data: [0, 30, 0, 16.90, 0, 0, 0, 0, 0, 50, 69, 0, 139.57, 0, 38.50]
         },{
-          name: '衣着',
+          name: 'clothing',
           type: 'bar',
           stack: '开销',
           data: [0, 0, 0, 144, 0, 0, 0, 0, 0, 0, 0]
         }, {
-          name: '订阅',
+          name: 'subscribe',
           type: 'bar',
           stack: '开销',
           data: [0, 0, 0, 0, 25, 10, 0, 0, 0, 150, 0]
