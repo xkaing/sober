@@ -62,7 +62,7 @@ class ChartMonth extends Component {
           name: 'lunch',
           type: 'bar',
           stack: '开销',
-          data: [0, 65.31, 0, 0, 81.70, 0, 0, 0, 0, 82.50, 0, 0, 80.68]
+          data: [0, 65.31, 0, 0, 81.70, 0, 0, 0, 0, 82.50, 0, 0, 80.68, 0, 0, 21]
         },{
           name: 'snacks',
           type: 'bar',
