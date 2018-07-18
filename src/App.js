@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Finance from './view/finance';
 
